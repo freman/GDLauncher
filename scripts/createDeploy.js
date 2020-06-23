@@ -101,15 +101,16 @@ const createDeployFiles = async () => {
 
 const commonConfig = {
   config: {
+    forceCodeSigning: false,
     publish: {
-      owner: 'gorilla-devs',
-      repo: 'GDLauncher',
+      owner: 'freman',
+      repo: 'NPLauncher',
       provider: 'github',
       private: false
     },
     generateUpdatesFilesForAllChannels: true,
-    productName: 'GDLauncher',
-    appId: 'org.gorilladevs.GDLauncher',
+    productName: 'NPLauncher',
+    appId: 'org.freman.NPLauncher',
     files: [
       '!node_modules/**/*',
       'node_modules/7zip-bin/linux/x64/7za',
@@ -148,6 +149,12 @@ const commonConfig = {
       perMachine: false,
       differentialPackage: true,
       include: './public/installer.nsh'
+    },
+    win: {
+      sign: false
+    },
+    mac: {
+      identity: false
     },
     /* eslint-disable */
     artifactName: `${'${productName}'}-${'${os}'}-${

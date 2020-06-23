@@ -18,7 +18,6 @@ import {
   updateUpdateAvailable,
   getAppLatestVersion
 } from '../../../common/reducers/actions';
-import BisectHosting from '../../../ui/BisectHosting';
 import Logo from '../../../ui/Logo';
 
 const SystemNavbar = () => {
@@ -187,11 +186,6 @@ const SystemNavbar = () => {
               height: 100%;
             `}
           >
-            Partnered with &nbsp;&nbsp;
-            <BisectHosting
-              showPointerCursor
-              onClick={() => dispatch(openModal('BisectHosting'))}
-            />
             <PulsatingCircle />
           </div>
         </>
@@ -275,11 +269,6 @@ const SystemNavbar = () => {
               height: 100%;
             `}
           >
-            Partnered with &nbsp;&nbsp;
-            <BisectHosting
-              showPointerCursor
-              onClick={() => dispatch(openModal('BisectHosting'))}
-            />
             <PulsatingCircle />
           </div>
           <div>
