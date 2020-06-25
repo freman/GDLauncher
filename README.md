@@ -6,7 +6,7 @@
 ![Github All Releases](https://img.shields.io/github/downloads/gorilla-devs/GDLauncher/total.svg)
 
 <details>
- <summary><strong>Table of Contents</strong> (click to expand)
+  <summary><strong>Table of Contents</strong> (click to expand)
 </summary>
 
 - [GDLauncher](#gdlauncher)
